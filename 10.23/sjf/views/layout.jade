@@ -1,0 +1,72 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+  style.
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    .box{
+    height: 200px;
+    }
+    #s_lg_img {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    margin-left: -135px;
+    }
+    #s_lg_img{
+    width: 270px;
+    height: 129px;
+    }
+    #kw{
+    width: 521px;
+    height: 20px;
+    padding: 9px 7px;
+    font: 16px arial;
+    border: 1px solid #b8b8b8;
+    border-bottom: 1px solid #ccc;
+    border-right: 0;
+    vertical-align: top;
+    outline: none;
+    box-shadow: none;
+    }
+    .btn {
+    color: white;
+    background-color: #38f;
+    width: 102px;
+    height: 40px;
+    font-size: 16px;
+    border: 0;
+    }
+    #head_wrapper.s-down .btn, .s-title-img .btn {
+    cursor: pointer;
+    width: 102px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    border: 0;
+    background: none;
+    background-color: #38f;
+    font-size: 16px;
+    color: white;
+    box-shadow: none;
+    font-weight: normal;
+    }
+    .op{
+    position: absolute;
+    bottom: 60%;
+    left: 40%;
+    margin-left: -135px;
+    }
+    input{
+    float: left;
+    }
+  body
+    .box
+      #lg.s-p-top
+        img#s_lg_img(src='https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png')
+    .op
+      input#kw.s_ipt(type='text', name='wd', maxlength='100', autocomplete='off')
+      input#su.btn.self-btn.bg.s_btn(type='submit', value='百度一下')
